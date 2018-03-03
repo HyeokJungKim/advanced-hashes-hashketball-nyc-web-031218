@@ -103,5 +103,5 @@ def big_shoe_rebounds
       player = name
     end
   end
-  return player
+  return player[:rebounds]
 end
