@@ -108,5 +108,5 @@ def big_shoe_rebounds
     return game_hash[:home][:players][player][:rebounds]
   else
     return game_hash[:away][:players][player][:rebounds]
-
+  end
 end
