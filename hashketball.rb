@@ -48,6 +48,6 @@ def shoe_size(name)
   if game_hash[:home][:players].keys.include?(name)
     return game_hash[:home][:players][name][:shoe]
   else
-    return game_hash[:away][:players][name][:points]
+    return game_hash[:away][:players][name][:shoe]
   end
 end
