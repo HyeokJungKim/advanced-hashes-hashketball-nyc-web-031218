@@ -105,6 +105,8 @@ def big_shoe_rebounds
     end
   end
   if game_hash[:home][:players].keys.include?(player)
-    return game_hash[:home][:players][name][:points]
-  
+    return game_hash[:home][:players][player][:rebounds]
+  else
+    return game_hash[:away][:players][player][:rebounds]
+
 end
