@@ -68,12 +68,15 @@ def team_names
 end
 
 def player_numbers(team)
+  arr = []
     if game_hash[:home][:team_name] == team
-      arr = []
       game_hash[:home][:players].collect do |player, stat|
         arr << stat[:number]
       end
       return arr
     else
+      game_hash[:away][:players].collect do |player, stat|
+        arr << stat[:number]
+      end
     end
 end
