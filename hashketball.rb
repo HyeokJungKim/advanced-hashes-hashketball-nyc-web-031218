@@ -64,5 +64,6 @@ def team_names
   arr = []
   arr << game_hash[:home][:team_name]
   arr << game_hash[:away][:team_name]
+  return arr
 
 end
