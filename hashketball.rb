@@ -53,7 +53,7 @@ def shoe_size(name)
 end
 
 def team_colors(team)
-  if game_hash[:home][:team_name].keys.include?(team)
+  if game_hash[:home][:team_name] == team
     return game_hash[:home][:colors]
   else
     return game_hash[:away][:colors]
