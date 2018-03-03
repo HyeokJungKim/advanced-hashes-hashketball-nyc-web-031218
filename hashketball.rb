@@ -68,5 +68,10 @@ def team_names
 end
 
 def player_numbers(team)
+    if game_hash[:home][:team_name] == team
+      game_hash[:home][:players].collect do |player|
+      end
 
+    else
+    end
 end
