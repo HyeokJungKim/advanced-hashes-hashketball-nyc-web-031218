@@ -80,3 +80,7 @@ def player_numbers(team)
     end
     arr
 end
+
+def player_stats(player)
+
+end
