@@ -70,11 +70,11 @@ end
 def player_numbers(team)
   arr = []
     if game_hash[:home][:team_name] == team
-      game_hash[:home][:players].collect do |player, stat|
+      game_hash[:home][:players].each do |player, stat|
         arr << stat[:number]
       end
     else
-      game_hash[:away][:players].collect do |player, stat|
+      game_hash[:away][:players].each do |player, stat|
         arr << stat[:number]
       end
     end
