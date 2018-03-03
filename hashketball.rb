@@ -90,5 +90,5 @@ def player_stats(name)
 end
 
 def big_shoe_rebounds
-  return 12
+  game_hash[:home][:players][name][:shoe]
 end
