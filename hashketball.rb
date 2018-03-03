@@ -91,7 +91,7 @@ end
 
 def big_shoe_rebounds
   player = game_hash[:home][:players].first
-  shoe = [:home][:players][player][:shoe]
+  shoe = game_hash[:home][:players][player][:shoe]
   game_hash[:home][:players].each do |name, stat|
     return 2
   end
